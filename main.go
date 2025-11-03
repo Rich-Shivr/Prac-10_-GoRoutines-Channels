@@ -36,6 +36,6 @@ func main() {
 	close(jobs) // Para cerrar el channel.
 
 	// Esperar a que todos los workers terminen
-	wg.Wait() // Para esperarhasta que se llamen a todos los wg.Donde(), indicando que todos los worker terminaron
+	wg.Wait() // Para esperar hasta que se llamen a todos los wg.Done(), indicando que todos los worker terminaron
 	fmt.Println("Todas las tareas han sido procesadas.")
 }
